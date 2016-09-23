@@ -7,16 +7,16 @@ window.requestAnimFrame = (function() {
 
 (function() {
   var settings = {
-    NUM_PARTICLES : 100,
+    NUM_PARTICLES : 20,
     DISTANCE_T    : 0,
     RADIUS        : 1,
     OPACITY       : 1,
-    SPEED_X       : 0.6,
-    SPEED_Y       : 0.6,
+    SPEED_X       : 0.3,
+    SPEED_Y       : 0.3,
     AMPLITUDE     : 110
   };
   
-  var COLOURS    = ["#FFFFFF", "#FFFFFF", "#FFFFFF"],
+  var COLOURS    = ["#FFFFFF", "#66ffff", "#ffff1a"],
       bounds     = {},
       particles  = [],
       random     = Math.random,
@@ -232,7 +232,7 @@ window.requestAnimFrame = (function() {
 
 
 var background = new Image();
-background.src = "http://mytime-magazine.com/img/bg.jpg";
+background.src = "http://reconscious.band/bg.jpg";
 
 background.onload = function(){
     ctx.drawImage(background,0,0);   
